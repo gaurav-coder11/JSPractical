@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS-Events</title>
+	<script type="text/javascript">
+		function Events(){
+			alert("Welcome to java tutoriels");
+			alert("This is Gaurav");
+		}
+		function MyDate(){
+			document.getElementById("dt").innerHTML=Date();
+		}
+		function OnLoad(){
+			alert("Image Load successfully");
+		}
+		function ErrorMsg(){
+			alert("Image Resourcw not Found!!")
+		}
+		function MouseOver(x){
+			x.style.width="300px";
+			x.style.width="300px";
+		}
+		function MouseOut(x){
+			x.style.width="200px";
+			x.style.width="200px";
+		}
+		function Resized(){
+			alert("Sorry Page Not Resized");
+		}
+		function OnSelectEvent(){
+			alert("Sorry Text Not Be Selected");
+		}
+		function OnBlurEvent(){
+			var x=document.getElementById("fname");
+			x.value = x.value.toUpperCase();
+			//alert("Sorry Text Not Be Selected");
+		}
+		function OnFocuseEvent(){
+			var x=document.getElementById("lname");
+			x.value = x.value.toLowerCase();
+		}
+	</script>
+</head>
+<body onresize="Resized()">
+	<p>
+		This is Alert Tutorial</br>
+		<button onclick="Events()"> Click </button>
+	</p>
+	<p id="dt">This is show System Date and time please double click the button
+		<button ondblclick="MyDate()">Date
+		</button>
+	</p>
+	<p>
+		<img src="pexels.jpg" width="200px" height="200px" onload="OnLoad()" alt="img" onmouseover="MouseOver(this)" onmouseout="MouseOut(this)">
+	</p>	
+	<p>
+		<img src="wp.jpg" width="200px" height="200px" onerror="ErrorMsg()" alt="img">
+	</p>
+	<form onselect="OnSelectEvent()">
+		<label>Enter Name</label>
+		<input type="text"></template>
+	</form>
+	<div>
+		<form>
+		<label>Enter Name in Lowercase</label>
+		<input type="text" id="fname" onblur="OnBlurEvent()"></template></br>
+		<label>Enter Name in UpperCase</label>
+		<input type="text" id="lname" onfocus="OnFocuseEvent()"></template>
+	</form>
+	</div>	
+</body>
+</html>

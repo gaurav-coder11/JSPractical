@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function MyAarray(){
+		var arr = ["HTML","JAVA","SCC","JS"]; //array literals
+		document.getElementById("arr").innerHTML =arr.length;
+		}
+		function MyAarray1(){
+		var arr = ["1","2","3","4"]; //array literals
+		document.getElementById("arr1").innerHTML =arr.reverse();
+		}
+		</script>
+		<script type="text/javascript">
+		document.write("</br>");
+		var MyArray = new Array();
+		MyArray[0]=["HTML"];
+		MyArray[1]=["JAVA"];
+		MyArray[2]=["SCC"];
+		MyArray[3]=["JS"];
+		MyArray[4]=["PHP"];
+		document.write("Number of an array " + MyArray.length); //regular array
+		document.write("</br>");
+		var arr1 = new Array("HTML","JAVA","SCC","JS","JQ","AJS"); 
+		document.write("Number of an array " + arr1.length); //condention array
+	</script>
+	<div>
+		<p id="arr" style="font-family: fantasy; color: blue;">
+			<button onclick="MyAarray()">
+				Click
+			</button>
+		</p>
+	</div>
+	<div>
+		<p id="arr1" style="font-family: fantasy; color: blue;">
+			<button onclick="MyAarray1()">
+				Click
+			</button>
+		</p>
+	</div>
+</body>
+</html>

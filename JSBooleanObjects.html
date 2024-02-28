@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Boolean</title>
+	<script type="text/javascript">
+		var x = new Boolean(1);
+		document.write("The Boolean Value is: "+x+"</br>")
+		var x1 = new Boolean(0);
+		document.write("The Boolean Value is: "+x1)
+
+		function MyDate(){
+			document.getElementById('dt').innerHTML = Date();
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<p>
+			Todaye date is
+		</p>
+		<p id="dt">
+			<button onclick="MyDate()">
+				Date
+			</button>
+		</p>
+	</div>
+	<div>
+	<script type="text/javascript">
+		var date = new Date();
+		var dd = date.getDate();
+		var mm = date.getMonth()+1;
+		var yy = date.getFullYear();
+		var hh = date.getHours();
+		var mmm = date.getMinutes();
+		var ss = date.getSeconds();
+			document.write("Todays Date is " + dd + '/' + mm + '/'+ yy + " Time is " + hh +":" + mmm + ":" +ss);
+	</script>
+	</div>
+</body>
+</html>
